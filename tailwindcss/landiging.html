@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used phone</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @media (max-width: 640px) {
+           .main {
+                flex-direction: column;
+            }
+           .main > div:first-child {
+                order: 2;
+            }
+           .main > div:last-child {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="bg-purple-800 text-white flex justify-between">
+        <img src="https://randomuser.me/api/portraits/med/men/75.jpg" class="h-10 pt-3 px-3 rounded-2xl" alt="">
+        <ul class="px-2 py-4 flex space-x-11 justify-end">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer">Catalogue</li>
+            <li class="cursor-pointer">Contact Us</li>
+        </ul>
+    </nav>
+    <main class="bg-fuchsia-100 flex justify-around">
+        <div class="main pl-7 py-40 px-3">
+            <div class="text-6xl">
+                The best phone in town
+            </div>
+            <p class="py-3 w-1/2">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo porro minima quod architecto voluptas ea deleniti provident repudiandae ut temporibus at ducimus,
+                cupiditate odit voluptates, quis distinctio tempore! Quo, recusandae.
+            </p>
+            <div class="my-4">
+                <button class="bg-purple-800 px-3 py-2 rounded-2xl text-white hover:text-slate-900 hover:bg-red-400 mx-2">Buy Now</button>
+                <button class="bg-purple-800 px-3 py-2 rounded-2xl text-white hover:text-slate-900 hover:bg-red-400 mx-2">Contact Us</button>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <img src="web-developer.svg" class="h-80" alt="">
+        </div>
+    </main>
+</body>
+
+</html>
